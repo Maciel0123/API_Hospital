@@ -33,5 +33,5 @@ jobs:
       with:
         app-name: 'app-sql-rm554773'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_67232FC381C3401991847FA6E91E2D44 }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_434167ACDAD4425CB706B1A3B63A351D }}
         package: 'target/*.jar'
