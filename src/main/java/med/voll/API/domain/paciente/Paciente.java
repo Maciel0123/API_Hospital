@@ -34,6 +34,7 @@ public class Paciente {
         this.telefone = dados.telefone();
         this.cpf = dados.cpf();
         this.endereco = dados.endereco();
+        this.ativo = true;
     }
 
     public void atualizarInformacoes(@Valid DadosAtualizacaoPacientes dados) {

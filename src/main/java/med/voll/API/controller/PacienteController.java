@@ -32,7 +32,7 @@ public class PacienteController {
 
     @GetMapping
     public ResponseEntity<Page<DadosListagemPacientes>> listar(@PageableDefault(size = 10, sort = {"nome"}) Pageable paginacao){
-        var page = repository.findAll(paginacao).map(DadosListagemPacientes::new);
+        var page = repository.findAllByAtivoTrue(paginacao).map(DadosListagemPacientes::new);
         return ResponseEntity.ok(page);
     }
 
